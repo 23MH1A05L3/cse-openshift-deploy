@@ -5,10 +5,10 @@ FROM eclipse-temurin:17-jdk-alpine
 WORKDIR /app
 
 # Step 3: Copy the Spring Boot JAR file into the container
-COPY target/CseKuber1-0.0.1-SNAPSHOT.jar /app/cse.jar
+COPY target/*.jar cse.jar
 
 # Step 4: Expose the port your application runs on
 EXPOSE 8085
 
 # Step 5: Define the command to run your Spring Boot application
-CMD ["java", "-jar", "/app/cse.jar"]
+CMD ["java", "-jar", "cse.jar"]
