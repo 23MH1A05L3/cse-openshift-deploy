@@ -4,7 +4,7 @@ metadata:
   name: springboot-openshift-service
 spec:
   selector:
-    app: springboot-openshift
+   app: cseoc-app
   ports:
     - protocol: TCP
       port: 8085
